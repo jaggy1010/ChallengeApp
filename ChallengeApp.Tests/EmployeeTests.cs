@@ -15,5 +15,18 @@ public class EmployeeTests
          // assert
          Assert.AreEqual("Mieszko", result);
     }
+    
+    [Test]
+    public void CheckEmployeeSurname()
+    {
+        // arrange
+        Employee employee = new Employee("Bolesław", "Chrobry");
+        
+        // act
+        var result = employee.Surname;
+        
+        // assert
+        Assert.AreEqual("Chrobry",result);
+    }
 
 }
